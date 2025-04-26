@@ -1,0 +1,51 @@
+Test 01: dtype=float32, token=1, model_dim=7168, inter_dim=256, E=256, topk=8
+[W426 08:19:46.339337389 collection.cpp:1085] Warning: ROCTracer produced duplicate flow start: 1 (function operator())
+[perf] naive moe: 13153.46 us
+[perf] custom moe: 3600.51 us
+[perf] speedup 265.32%
+[checkAllclose atol=1e-05 rtol=0.001 passed~]
+Test 02: dtype=float32, token=2, model_dim=7168, inter_dim=256, E=256, topk=8
+[perf] naive moe: 14813.56 us
+[perf] custom moe: 3543.91 us
+[perf] speedup 318.00%
+[checkAllclose atol=1e-05 rtol=0.001 passed~]
+Test 03: dtype=float32, token=4, model_dim=7168, inter_dim=256, E=256, topk=8
+[perf] naive moe: 18729.64 us
+[perf] custom moe: 3608.95 us
+[perf] speedup 418.98%
+[checkAllclose atol=1e-05 rtol=0.001 passed~]
+Test 04: dtype=float32, token=8, model_dim=7168, inter_dim=256, E=256, topk=8
+[perf] naive moe: 24970.96 us
+[perf] custom moe: 3845.99 us
+[perf] speedup 549.27%
+[checkAllclose atol=1e-05 rtol=0.001 passed~]
+Test 05: dtype=float32, token=16, model_dim=7168, inter_dim=256, E=256, topk=8
+[perf] naive moe: 36239.31 us
+[perf] custom moe: 10326.15 us
+[perf] speedup 250.95%
+[checkAllclose atol=1e-05 rtol=0.001 passed~]
+Test 06: dtype=float32, token=32, model_dim=7168, inter_dim=256, E=256, topk=8
+[perf] naive moe: 50640.77 us
+[perf] custom moe: 23867.13 us
+[perf] speedup 112.18%
+[checkAllclose atol=1e-05 rtol=0.001 passed~]
+Test 07: dtype=float32, token=32, model_dim=8192, inter_dim=6144, E=8, topk=2
+[perf] naive moe: 13272.91 us
+[perf] custom moe: 103990.43 us
+[perf] speedup -87.24%
+[checkAllclose atol=1e-05 rtol=0.001 passed~]
+Test 08: dtype=float32, token=128, model_dim=8192, inter_dim=6144, E=8, topk=2
+[perf] naive moe: 13731.11 us
+[perf] custom moe: 552051.68 us
+[perf] speedup -97.51%
+[checkAllclose atol=1e-05 rtol=0.001 passed~]
+Test 09: dtype=float32, token=32, model_dim=8192, inter_dim=16384, E=8, topk=2
+[perf] naive moe: 58843.55 us
+[perf] custom moe: 349385.94 us
+[perf] speedup -83.16%
+[checkAllclose atol=1e-05 rtol=0.001 passed~]
+Test 10: dtype=float32, token=128, model_dim=8192, inter_dim=16384, E=8, topk=2
+[perf] naive moe: 42967.40 us
+[perf] custom moe: 1830580.18 us
+[perf] speedup -97.65%
+[checkAllclose atol=1e-05 rtol=0.001 passed~]

@@ -1,52 +1,51 @@
-Problem: Load imbalance
 Test 01: dtype=float32, token=1, model_dim=7168, inter_dim=256, E=256, topk=8
-[W425 16:42:12.176075551 collection.cpp:1085] Warning: ROCTracer produced duplicate flow start: 1 (function operator())
-[perf] naive moe: 12865.18 us
-[perf] custom moe: 744.27 us
-[perf] speedup 1628.55%
+[W426 09:19:58.383208056 collection.cpp:1085] Warning: ROCTracer produced duplicate flow start: 1 (function operator())
+[perf] naive moe: 12927.09 us
+[perf] custom moe: 3579.42 us
+[perf] speedup 261.15%
 [checkAllclose atol=1e-05 rtol=0.001 passed~]
 Test 02: dtype=float32, token=2, model_dim=7168, inter_dim=256, E=256, topk=8
-[perf] naive moe: 14547.45 us
-[perf] custom moe: 1490.60 us
-[perf] speedup 875.95%
+[perf] naive moe: 14971.18 us
+[perf] custom moe: 3552.82 us
+[perf] speedup 321.39%
 [checkAllclose atol=1e-05 rtol=0.001 passed~]
 Test 03: dtype=float32, token=4, model_dim=7168, inter_dim=256, E=256, topk=8
-[perf] naive moe: 18486.84 us
-[perf] custom moe: 2971.25 us
-[perf] speedup 522.19%
+[perf] naive moe: 18200.91 us
+[perf] custom moe: 3564.66 us
+[perf] speedup 410.59%
 [checkAllclose atol=1e-05 rtol=0.001 passed~]
 Test 04: dtype=float32, token=8, model_dim=7168, inter_dim=256, E=256, topk=8
-[perf] naive moe: 24737.67 us
-[perf] custom moe: 5928.90 us
-[perf] speedup 317.24%
+[perf] naive moe: 24724.17 us
+[perf] custom moe: 3828.46 us
+[perf] speedup 545.80%
 [checkAllclose atol=1e-05 rtol=0.001 passed~]
 Test 05: dtype=float32, token=16, model_dim=7168, inter_dim=256, E=256, topk=8
-[perf] naive moe: 36643.67 us
-[perf] custom moe: 11789.42 us
-[perf] speedup 210.82%
+[perf] naive moe: 35790.99 us
+[perf] custom moe: 10106.56 us
+[perf] speedup 254.14%
 [checkAllclose atol=1e-05 rtol=0.001 passed~]
 Test 06: dtype=float32, token=32, model_dim=7168, inter_dim=256, E=256, topk=8
-[perf] naive moe: 51507.56 us
-[perf] custom moe: 23725.20 us
-[perf] speedup 117.10%
+[perf] naive moe: 50969.01 us
+[perf] custom moe: 21861.51 us
+[perf] speedup 133.14%
 [checkAllclose atol=1e-05 rtol=0.001 passed~]
 Test 07: dtype=float32, token=32, model_dim=8192, inter_dim=6144, E=8, topk=2
-[perf] naive moe: 13287.30 us
-[perf] custom moe: 45725.12 us
-[perf] speedup -70.94%
+[perf] naive moe: 13264.60 us
+[perf] custom moe: 99781.53 us
+[perf] speedup -86.71%
 [checkAllclose atol=1e-05 rtol=0.001 passed~]
 Test 08: dtype=float32, token=128, model_dim=8192, inter_dim=6144, E=8, topk=2
-[perf] naive moe: 13793.39 us
-[perf] custom moe: 183454.33 us
-[perf] speedup -92.48%
+[perf] naive moe: 13758.72 us
+[perf] custom moe: 333197.08 us
+[perf] speedup -95.87%
 [checkAllclose atol=1e-05 rtol=0.001 passed~]
 Test 09: dtype=float32, token=32, model_dim=8192, inter_dim=16384, E=8, topk=2
-[perf] naive moe: 53568.41 us
-[perf] custom moe: 129693.88 us
-[perf] speedup -58.70%
+[perf] naive moe: 58697.35 us
+[perf] custom moe: 343547.97 us
+[perf] speedup -82.91%
 [checkAllclose atol=1e-05 rtol=0.001 passed~]
 Test 10: dtype=float32, token=128, model_dim=8192, inter_dim=16384, E=8, topk=2
-[perf] naive moe: 43176.19 us
-[perf] custom moe: 521034.51 us
-[perf] speedup -91.71%
+[perf] naive moe: 43067.49 us
+[perf] custom moe: 1000736.56 us
+[perf] speedup -95.70%
 [checkAllclose atol=1e-05 rtol=0.001 passed~]
